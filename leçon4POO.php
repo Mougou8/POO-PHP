@@ -35,4 +35,5 @@ Class Ordinateur{
 // l'objet est instancié avec un processeur de 2.4 GHz et on y installe un petit disque dur
 $poste = new Ordinateur("Samsung", 2.4);
 $poste->setHdd(Ordinateur::HDD_SMALL);
-echo "Le disque dur est d'une capcitéde ".^poste->getHdd();//affiche 250Go
+echo "Le disque dur est d'une capacité de ".$poste->getHdd();//affiche 250Go
+
