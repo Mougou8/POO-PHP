@@ -2,7 +2,7 @@
 
 $dsn= 'mysql:dbname=park;host=localhost';
 $user= 'root';
-$password=";
+$password= ";
 
 try{
    

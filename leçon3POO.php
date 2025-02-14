@@ -23,7 +23,7 @@ Class Ordinateur{
     }
 
     public function setCpuClock($speed){
-            $this->_$speed;
+            $this->$speed;
     }
 }
 // l'objet est instancié avec un processer de 2.4 GHz

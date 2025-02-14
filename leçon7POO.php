@@ -4,7 +4,6 @@ Class Ordinateur{
     private$_marque;
     private$_cpuClock;
 
-    ...
 
     public function__construct($valeurs=array()){
                  if(!empty($valeurs))

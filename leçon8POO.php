@@ -1,9 +1,9 @@
 <?php
 
 Class OrdinateurManager{
-    private_$db;  // l'objet PDO crée par le fichier dbconnect.php
+    private _$db;  // l'objet PDO crée par le fichier dbconnect.php
 
-    public function__construct($db){
+    public function __construct($db){
         $this->setDb($db);
 
     }

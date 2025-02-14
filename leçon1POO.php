@@ -6,7 +6,7 @@ Class Ordinateur{
     private $_marque;
 
 
-    public function_construct($marque){ 
+    public function _construct($marque){ 
             $this->_marque = $marque;
     }
 }
