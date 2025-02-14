@@ -91,7 +91,7 @@ class Voiture{
     
     // Voiture::combien(); // affiche 0
     $vehicle1 = new Voiture("Peugeot", "408", 5);
-    // $vehicule2 = new Voiure("Citroên", "C4", 3);
+    $vehicle2 = new Voiture("Citroên", "C4", 3);
     // Voiture::combien(); // affiche 2
 
     echo $vehicle1->getMarque();
