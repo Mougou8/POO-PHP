@@ -11,7 +11,7 @@ class Voiture {
     }
 
     public function getInfos() {
-        return Marque : ". $this->marque .", Modèle : " . $this->modele.";
+        return "Marque : $this->_marque, Modèle : $this->_modele";
     }
 }
 // classe de dérive VoitureElec= héritage
@@ -24,7 +24,7 @@ class VoitureElect extends Voiture {
         $this->autonomie = $autonomie;
 }
     public function getInfos(){
-      return parent::getInfos() . ", Autonomie : ". $this->autonomie ." km";
+      return parent::getInfos() . ", Autonomie : $this->_autonomie km";
     }
 }
 // Instanciation des objets
@@ -36,7 +36,9 @@ echo $v1->getInfos() ."<br>";
 echo $ve2->getInfos() ."<br>";
 
 
-
-
+// Héritage: définit des rélations hiérarchiques entre les classes ,
+// de sorte que les attributs et méthodes communs peuvent être réutilisés.
+//En définissant des attributs et des comportements de base dane classe principale
+//et ajoute des attributs et des comportements suplémentaires . 
 
 
