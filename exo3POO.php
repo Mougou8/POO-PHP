@@ -1,46 +1,39 @@
 <?php
+class Personne {
 
-echo "bonjour";
+private  $_nom;
+private  $_prenom;
+private  $_dateNaissance;
 
-class Personne {}
-
-private string $_nom;
-private string $_prenom;
-private int    $_date;
-
-public function __construct($nom, $prenom, $age) {
+public function __construct($nom, $prenom, $dateNaissance) {
     $this->_nom = $nom;
     $this->_prenom = $prenom;
-    $this->_date = $date;
+    $this->_dateNaissance = new DateTime($dateNaissance);
 }
 
-   // Méthodes pour obtenir les valeurs des propriétés
-public function getNom(){
-     return $this->_nom;
+//Méthode pour calculer l'âge
+public function getAge(){ //
+    $aujourdhui = new DateTime();
+    $age = $aujourdhui->diff($this->dateNaissance);
+    return $age->y;// retourne l'âge en années
 }
-
-public function getPrenom(){
-    return$this->_prenom;
-}
-
-public function getDate(){
-    return $this->_date;
-}
-
-  // Méthodes pour définir les valeurs des propriétés
-public function setNom($nom) {
-    $this->nom = $nom;
-}
-
-public function setNom($prenom) {
-    $this->prenom = $prenom;
-}
-
-public function setNom($date) {
-    $this->date = $date;
-}
-
+// Méthode pour afficherles informations
 public function afficherInfos() {
-    echo "Nom: " . $this->nom . "\n";
-    echo "Prénom" . $this->prenom . "\n";
-    echo "DateNaissance" . $this->
+    echo"{$this->prenom} {$this->nom} a " . $this-> getAge() . " ans.<br>";
+    }
+}
+// Instanciation des objets
+$sp1 = new Personne ("DUPONT", "Michel", "1980-02-19");
+$sp2 = new Personne ("DUCHEMIN", "Alice", "1985-01-17");
+
+// Affichage
+$sp1->afficherInfos();
+$sp2->afficherInfos();
+
+ 
+
+// // public function afficherInfos() {
+// //     echo "Nom: " . $this->nom . "\n";
+// //     echo "Prénom" . $this->prenom . "\n";
+// //     echo "DateNaissance" . $this->
+
