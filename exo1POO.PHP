@@ -122,41 +122,9 @@ public function setArret($arret) {
                 }             
         }   
 
-        // public static function combien (){ // méthode statique
-        //             echo self::$_nbVehicles."<br>";
-
-
-        // }
-
-        // echo "La voiture " . $this->marque . " démarre.\n";
-            // public function accelerer($increment) {
-    //         $this->vitesseActuelle += $increment;
-    //    echo "La voiture " . $this->marque . " accélère à " . $this->vitesse . " km/h.\n";
-    //    }
-    //     }
-
-    // public function stopper($vitesse) {
-    //         $this->vitesseActuelle -= $vitesse;
-    //         if ($this->vitesseActuelle < 0) {
-    //             $this->vitesseActuelle = 0; // La vitesse ne peut pas être négative
-    //         }
-    // }  
-        
-    //     public static function combien (){ // méthode statique
-    //         echo self::$_nbVehicules."<br>";
+      
         }
-    // }       
     
-    // $voiture = new Voiture();
-    // $voiture->demarrer(0);
-    // echo "vitesse actuelle : " . $voiture->getVitesseActuelle() ." km/h\n"; // Affichage 0 km/h
-    // $voiture->accelerer(50);
-    // echo "Vitesse actuelle : " . $voiture->getVitesseActuelle() . " km/h\n"; // Affiche 50 km/h
-    // $voiture->stopper(0);
-    // echo "Vitesse actuelle : " . $voiture->getVitesseActuelle() . " km/h\n"; // Affiche 0 km/h
-
-    
-    // Voiture::combien(); // affiche 0
     $vehicle1 = new Voiture("Peugeot", "408", 5);
     $vehicle2 = new Voiture("Citroên", "C4", 3);
     // Voiture::combien(); // affiche 2
@@ -178,13 +146,7 @@ public function setArret($arret) {
     echo $vehicle2->getArret();
     
  
-
-// $vehicle1->setMarque("vgfdbgfhg");
-//     echo $vehicle1->getMarque();
-  // $vehicle1->setModele("mgmhjjj");
-//    echo $vehicle1->getModele();
-    // $vehicle1->setVitesseActuelle(50);
-//    echo $vehicle1->getVitesseActuelle();
+;
   
 
 // ajouter une methode to string 
